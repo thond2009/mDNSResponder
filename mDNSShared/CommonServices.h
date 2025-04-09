@@ -192,6 +192,9 @@ extern "C" {
 
     #include    <stdint.h>
     #include    <arpa/inet.h>
+#if defined __STDC__ && defined __STDC_VERSION__ && __STDC_VERSION__ >= 199901L
+    #include    <stdbool.h>
+#endif
 
 #elif ( TARGET_OS_SOLARIS )
 
